@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="app.min.css">
+    <style>
+      /* TODO */
+    </style>
+  </head>
+
+  <body>
+    <div class="app-page" data-page="home">
+      <div class="app-topbar">
+        <div class="app-title">Home page</div>
+      </div>
+
+      <div class="app-content">
+        <div class="app-section">
+          <div class="app-button" data-target="friends">Friends</div>
+        </div>
+        <div class="app-section">
+          <div class="app-button" data-target="addnew">Add New</div>
+        </div>
+        <div class="app-section">
+          <div class="app-button" data-target="mycircle">My circle</div>
+        </div>
+        <div class="app-section">
+          <div class="app-button" data-target="settings">Settings</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-page" data-page="friends">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">friends</div>
+      </div>
+      <div class="app-content">
+        friends is lonely
+      </div>
+    </div>
+
+    <div class="app-page" data-page="addnew">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">addnew</div>
+      </div>
+      <div class="app-content">
+        addnew is lonely
+      </div>
+    </div>
+
+    <div class="app-page" data-page="mycircle">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">mycircle</div>
+      </div>
+      <div class="app-content">
+        mycircle is lonely
+      </div>
+    </div>
+
+    <div class="app-page" data-page="settings">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">settings</div>
+      </div>
+      <div class="app-content">
+        settings is lonely
+      </div>
+    </div>
+
+    <script src="zepto.js"></script>
+    <script src="app.min.js"></script>
+    <script>
+      App.controller('home', function (page) {
+        // put stuff here
+      });
+
+      App.controller('friends', function (page) {
+        // put stuff here
+      });
+
+      App.controller('addnew', function (page) {
+        // put stuff here
+      });
+
+      App.controller('mycircle', function (page) {
+        // put stuff here
+      });
+
+      App.controller('settings', function (page) {
+        // put stuff here
+      });
+      
+      try {
+        App.restore();
+      } catch (err) {
+        App.load('home');
+      }
+    </script>
+  </body>
+</html>
