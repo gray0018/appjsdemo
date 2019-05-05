@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dollars</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="res/css/materialize.min.css">
+    <link rel="stylesheet" href="res/css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="res/css/login.css">
+    <link rel="stylesheet" href="res/css/loading.css">
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        
+        html {
+            font-family: 微软雅黑;
+        }
+        
+        main {
+            flex: 1 0 auto;
+            position: relative;
+        }
+        
+        header,
+        main,
+        footer,
+        .chatWindowFrame {
+            padding-left: 300px;
+        }
+
+        .modal{
+            position: absolute;
+            left: 150px !important;
+        }
+        
+        @media only screen and (max-width: 992px) {
+            header,
+            main,
+            footer,
+            .chatWindowFrame {
+                padding-left: 0;
+            }
+
+            .modal{
+            left: 0px !important;
+        }
+        }
+        
+        .chatWindowFrame::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .side-nav::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body style="overflow:hidden;">
+
+
+
+    <header style="z-index:0">
+        <nav class="top-nav z-depth-3" style="background-color:#ff94c2;">
+            <div class="nav-wrapper center" style="padding-left:20px;padding-top: 5px;">
+                <a class="left" href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons" style="color:white;">arrow_back_ios</i></a>
+                <img class="left" src="avatar.png" alt="" style="width:45px;height:45px;border-radius:50%;background:yellow;">
+                <a href="#" class="left" style="font-size:20px;padding-left: 20px;">Jack.wang</a>
+            </div>
+
+        </nav>
+    </header>
+    <div class="container" style="z-index:-1;">
+        <div class="row">
+            <div class="arrow" style="width: 0; height: 0; border-top: 10px solid transparent;border-bottom: 10px solid transparent; border-right:10px solid blue;display: inline-block;margin-bottom: 175px; "></div>
+            <div class="msgbox z-depth-1-half" style="width:200px;height:200px;background-color: #ff94c2;display: inline-block;position: relative;left: -5px;border-radius: 5px;"></div>
+        </div>
+    </div>
+    <div class="container" style="box-shadow: inset 0px -3px 5px -4px rgba(0, 0, 0, 0.14); margin: 0px;width: 100%;padding-left: 5%;padding-right: 5%;height: min-content;">
+        <div class="row" style="margin:0px;">
+            <style>
+                i{
+                    font-size: 30px !important;
+                    color: #ff94c2;
+                }
+                
+            </style>
+            <div class="tools">
+                <a href=""><i class="material-icons" style="margin-right: 10px;">keyboard_arrow_up</i></a>
+                <a href=""><i class="material-icons" style="margin-right: 10px;">undo</i></a>
+                <a href=""><i class="material-icons" style="margin-right: 10px;">redo</i></a>
+                <a href="" class="btn right" style="height:30px;background: #ff94c2;">SEND</a>
+                <a href="" class="right"><div style="width:20px;height:20px;background:black;border-radius:50%;display: inline-block;position: relative;top: 7px;margin-left: 3px;margin-right: 10px;"></div></a>
+                <a href="" class="right"><img src="pen.png" alt="" style="width:30px;height:30px;margin-right: 10px;"></a>
+                <a href="" class="right"><img src="erase.png" alt="" style="width:30px;height:30px;margin-right: 10px;"></a>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container">
+            <div class="row">
+                    <div class="canvas">
+        
+                    </div>
+                </div>
+    </div>
+
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
+    <script src="res/js/jquery-2.1.1.min.js"></script>
+    <script src="res/js/materialize.min.js"></script>
+    <script src="res/js/main.js"></script>
+
+    <!-- Insert this line after script imports -->
+    <script>
+        if (window.module) module = window.module;
+    </script>
+</body>
+
+</html>
