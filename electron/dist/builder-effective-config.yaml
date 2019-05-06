@@ -1,0 +1,14 @@
+directories:
+  output: dist
+  buildResources: build
+appId: 'com.electron.${name}'
+win:
+  target: portable
+  icon: app/heapsort.png
+files:
+  - index.js
+  - app/res/css/*
+  - app/res/js/*
+  - app/*
+  - app/heapsort.png
+electronVersion: 1.8.8
