@@ -23,6 +23,8 @@ $(document).ready(function () {
     // $("#changePasswdWindow").modal('close');
 });
 
+
+
 setTimeout(() => {
     // $("#msg1").addClass("bounceInUp")
     // $("#msg1").addClass("animated")
@@ -32,7 +34,11 @@ setTimeout(() => {
         // $("#msg2").addClass("animated")
         $("#msg2").css("display","flex")
     setTimeout(() => {
-            $("#btn").css("display","block")
+            $("#msg3").css("display","block")
+            setTimeout(() => {
+                $("#btn").css("display","block")
+                
+            }, 1000);
             // $("#btn").addClass("fadeIn")
             // $("#btn").addClass("animated")
         }, 2000);

@@ -64,16 +64,16 @@
 
         /* text-shadow: -1px 0 orange, 0 1px orange, 1px 0 orange, 0 -1px orange; */
     </style>
-
+    <link href="https://fonts.googleapis.com/css?family=Cormorant|Slabo" rel="stylesheet">
 </head>
 
-<body style="background-image: url('bk.jpg');background-size: 300%;backdrop-filter: brightness(100%) blur(20px);height: 100%;width: 100%;overflow: hidden;position: relative;">
+<body class="slideRight animated" style="background-image: url('bk.jpg');background-size: 300%;backdrop-filter: brightness(100%) blur(20px);height: 100%;width: 100%;overflow: hidden;position: relative;">
 
     <div id="screen" class="container center" style="width:100%;height:500px;margin:auto;">
         <div id="msg1" class="row left bounceInUp animated" style="position:relative;margin: auto;margin-left: 20px;display: none;">
             <img src="avatar.jpg" alt="" style="width:50px;height:50px;border-radius:50%;display:inline-block;">
             <div class="arrow" style="z-index:1;width: 0; height: 0; border-top: 10px solid transparent;border-bottom: 10px solid transparent; border-right:10px solid #64b5f6;display: inline-block;position: absolute;top:15px; "></div>
-            <div class="msgbox z-depth-1-half" style="z-index:-1;width:200px;height:auto;background-color: #64b5f6;display: inline-block;position: relative;left: 10px;border-radius: 5px;color: white;">
+            <div class="msgbox z-depth-1-half" style="z-index:-1;width:200px;height:auto;background-color: #64b5f6;display: inline-block;position: relative;left: 10px;border-radius: 5px;color: white;font-family: Cormorant,Slabo !important;font-size: 20px;font-weight: 200">
                 Do you know what this app is?
             </div>
         </div>
@@ -85,9 +85,13 @@
             <div class="arrow right" style="z-index:1;width: 0; height: 0; border-top: 10px solid transparent;border-bottom: 10px solid transparent; border-left:10px solid #64b5f6;display:flex;position: absolute;top:15px;right:60px; "></div>
             <img class="right" src="avatar2.jpg" alt="" style="width:50px;height:50px;border-radius:50%;display:flex;position: relative;top: -50px;">
         </div>
+        
+        <div id="msg3" class="container fadeIn animated" style="position: relative;top: 100px;display: none;" >
+            <h1 style="color:white;font-weight: 100;">Got It ?</h1>
+        </div>
 
         <div id="btn" class="container fadeIn animated" style="display: none;position: absolute;bottom: 50px;width: 100%;">
-            <a href="#!" class="btn hoverable waves-effect" style="width:100px;background-color: #64b5f6;">NEXT</a>
+            <a href="../guide3/index.html" class="btn hoverable waves-effect" style="width:100px;background-color: #64b5f6;">NEXT</a>
         </div>
     </div>
 

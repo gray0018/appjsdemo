@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="res/css/materialize.min.css">
+    <link rel="stylesheet" href="res/css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="res/css/login.css">
+    <link rel="stylesheet" href="res/css/loading.css">
+    <link rel="stylesheet" href="canvas/drawingboard.css">
+    <link rel="stylesheet" href="animate.css">
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        
+        html {
+            font-family: 微软雅黑;
+        }
+        
+        main {
+            flex: 1 0 auto;
+            position: relative;
+        }
+        
+        header,
+        main,
+        footer,
+        .chatWindowFrame {
+            padding-left: 300px;
+        }
+
+        .modal{
+            position: absolute;
+            left: 150px !important;
+        }
+        
+        @media only screen and (max-width: 992px) {
+            header,
+            main,
+            footer,
+            .chatWindowFrame {
+                padding-left: 0;
+            }
+
+            .modal{
+            left: 0px !important;
+        }
+        }
+        
+        .chatWindowFrame::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .side-nav::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* text-shadow: -1px 0 orange, 0 1px orange, 1px 0 orange, 0 -1px orange; */
+    </style>
+
+</head>
+
+<body class="slideRight animated" style="background-image: url('bk.jpg');background-size: 300%;backdrop-filter: brightness(100%) blur(20px);height: 100%;width: 100%;overflow: hidden;position: relative;">
+
+    <div id="screen" class="container center" style="width:100%;height:500px;margin:auto;">
+        <div id="msg1" class="row left bounceInUp animated" style="position:relative;margin: auto;margin-left: 10px;display: none;">
+            <h4 style="color:white;font-weight: 100">How to draw basic things</h4>
+        </div>
+        <div id="pics" class="container fadeIn animated" style="width:100%;display :none;">
+            <div class="container" style="width: 49%;margin:0;display: inline-block;">
+                <img class="center" src="sun.png" alt="" style="width:150px;height:auto;">
+                <a  class="center" href="#!" style="color:white;font-weight: 100;margin:auto;display: block;font-size: 30px;font-weight: 800;">Sun</a>
+            </div>
+            <div class="container" style="width: 49%;margin:0;display: inline-block;">
+                <img class="center" src="coffe.png" alt="" style="width:150px;height:auto;">
+                <a  class="center" href="#!" style="color:white;font-weight: 100;margin:auto;display: block;font-size: 30px;font-weight: 800;">Coffee</a>
+            </div>
+            <div class="container" style="width: 49%;margin:0;display: inline-block;">
+                <img class="center" src="boat.png" alt="" style="width:150px;height:auto;">
+                <a  class="center" href="#!" style="color:white;font-weight: 100;margin:auto;display: block;font-size: 30px;font-weight: 800;">Boat</a>
+            </div>
+            <div class="container" style="width: 49%;margin:0;display: inline-block;">
+                <img class="center" src="game.png" alt="" style="width:150px;height:auto;">
+                <a  class="center" href="#!" style="color:white;font-weight: 100;margin:auto;display: block;font-size: 30px;font-weight: 800;">Gaming</a>
+            </div>
+        </div>
+        
+        <div id="btn" class="container fadeIn animated" style="display: none;position: absolute;bottom: 50px;width: 100%;">
+            <a href="../gallery/index.html" class="btn hoverable waves-effect" style="width:120px;background-color: transparent;border: 2px solid #ffb74d">GALLERY</a>
+            <a href="#!" class="btn btn-flat hoverable waves-effect" style="width:120px;background-color: #ffe97d;">START</a>
+        </div>
+    </div>
+
+
+
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
+    <script src="res/js/jquery-2.1.1.min.js"></script>
+    <script src="res/js/materialize.min.js"></script>
+    <script src="canvas/drawingboard.js"></script>
+    <script src="res/js/main.js"></script>
+    <!-- Insert this line after script imports -->
+    <script>
+        if (window.module) module = window.module;
+    </script>
+</body>
+
+</html>

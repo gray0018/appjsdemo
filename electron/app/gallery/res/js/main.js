@@ -23,12 +23,13 @@ $(document).ready(function () {
     // $("#changePasswdWindow").modal('close');
 });
 
-function send(){
-    var canvas = document.getElementsByClassName("drawing-board-canvas")[0];
-    var dataURL = canvas.toDataURL();
-
-    var html = '<div class="row right" style="position:relative;width:100%;"><div class="msgbox z-depth-1-half" style="overflow:hidden;z-index:-1;width:200px;background-color: #ff94c2;display: inline-block;position: relative;right: 10px;border-radius: 5px;"><img src="'+dataURL+'" alt="" style="width:100%;height:auto;"></div><div class="arrow" style="z-index:1;width: 0; height: 0; border-top: 10px solid transparent;border-bottom: 10px solid transparent; border-left:10px solid #ff94c2;display: inline-block;position:absolute;top:5px;"></div></div><br>'
-    $("#chatbox")[0].innerHTML += html;
-}
-
-var myBoard = new DrawingBoard.Board('draw');
+setTimeout(() => {
+    $("#pic1").css("display","block")
+    setTimeout(() => {
+        $("#pic2").css("display","block")
+        setTimeout(() => {
+            $("#pic3").css("display","block")
+            
+        }, 1000);    
+    }, 1000);
+}, 1000);

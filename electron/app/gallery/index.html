@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="res/css/login.css">
     <link rel="stylesheet" href="res/css/loading.css">
     <link rel="stylesheet" href="canvas/drawingboard.css">
+    <link rel="stylesheet" href="animate.css">
     <style>
         body {
             display: flex;
@@ -64,14 +65,15 @@
 
 </head>
 
-<body style="background-image: url('bk.jpg');backdrop-filter: brightness(150%) blur(20px);height: 100%;width: 100%;">
+<body style="background-image: url('bk.jpg');backdrop-filter: brightness(150%) blur(20px);height: 100%;width: 100%;overflow: hidden;">
 
 
-    <div class="container center" style="width:100%;">
+    <div class="container center bounceInUp animated" style="width:100%;">
         <a href="#!" class="center" style="font-size:30px;color:white;margin-left:-40px;text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">Gallery </a>
-        <i class="material-icons left" style="color:white;margin-top: 10px;margin-left: 20px;">arrow_back_ios</i>
+        <a href="../guide3/index.html"><i class="material-icons left" style="color:white;margin-top: 10px;margin-left: 20px;">arrow_back_ios</i></a>
+        
     </div>
-    <div class="container" style="width:100%;">
+    <div id="pic1" class="container bounceInUp animated " style="width:100%;display: none;">
             <div class="center" style="width:49%;display:inline-block;margin: auto;margin-top: 50px;">
                 <img class="center" src="cat.png" alt="" style="margin:auto;width:100px;height:auto;display: block;">
                 <a href="" class="center" style="color:white;">Animals</a>
@@ -80,23 +82,31 @@
                 <img class="center" src="foods.png" alt="" style="margin:auto;width:100px;height:auto;display: block;">
                 <a href="" class="center" style="color:white;">Foods</a>
             </div>
-            <div class="center" style="width:49%;display:inline-block;margin: auto;margin-top: 50px;">
-                <img class="center" src="plane.png" alt="" style="margin:auto;width:100px;height:auto;display: block;">
-                <a href="" class="center" style="color:white;">Transport</a>
-            </div>
-            <div class="center" style="width:49%;display:inline-block;margin: auto;">
-                <img class="center" src="sun.png" alt="" style="margin:auto;width:100px;height:auto;display: block;">
-                <a href="" class="center" style="color:white;">Weather</a>
-            </div>
-            <div class="center" style="width:49%;display:inline-block;margin: auto;margin-top: 50px;">
-                <img class="center" src="ball.png" alt="" style="margin:auto;width:100px;height:auto;display: block;">
-                <a href="" class="center" style="color:white;">Sports</a>
-            </div>
-            <div class="center" style="width:49%;display:inline-block;margin: auto;">
-                <img class="center" src="people.png" alt="" style="margin:auto;width:100px;height:auto;display: block;">
-                <a href="" class="center" style="color:white;">People</a>
-            </div>
     </div>
+    <div id="pic2" class="container bounceInUp animated" style="width:100%;display: none;">
+        <div class="center" style="width:49%;display:inline-block;margin: auto;margin-top: 50px;">
+            <img class="center" src="plane.png" alt="" style="margin:auto;width:100px;height:auto;display: block;">
+            <a href="" class="center" style="color:white;">Transport</a>
+        </div>
+        <div class="center" style="width:49%;display:inline-block;margin: auto;">
+            <img class="center" src="sun.png" alt="" style="margin:auto;width:100px;height:auto;display: block;">
+            <a href="" class="center" style="color:white;">Weather</a>
+        </div>
+
+    </div>
+    <div id="pic3" class="container bounceInUp animated" style="width:100%;display: none;">
+        <div class="center" style="width:49%;display:inline-block;margin: auto;margin-top: 50px;">
+            <img class="center" src="ball.png" alt="" style="margin:auto;width:100px;height:auto;display: block;">
+            <a href="" class="center" style="color:white;">Sports</a>
+        </div>
+        <div class="center" style="width:49%;display:inline-block;margin: auto;">
+            <img class="center" src="people.png" alt="" style="margin:auto;width:100px;height:auto;display: block;">
+            <a href="" class="center" style="color:white;">People</a>
+        </div>
+    </div>
+
+
+    
     <script>
         if (typeof module === 'object') {
             window.module = module;
