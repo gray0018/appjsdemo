@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="res/css/materialize.min.css">
+    <link rel="stylesheet" href="res/css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="res/css/login.css">
+    <link rel="stylesheet" href="res/css/loading.css">
+    <link rel="stylesheet" href="canvas/drawingboard.css">
+    <link rel="stylesheet" href="animate.css">
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        
+        html {
+            font-family: 微软雅黑;
+        }
+        
+        main {
+            flex: 1 0 auto;
+            position: relative;
+        }
+        
+        header,
+        main,
+        footer,
+        .chatWindowFrame {
+            padding-left: 300px;
+        }
+
+        .modal{
+            position: absolute;
+            left: 150px !important;
+        }
+        
+        @media only screen and (max-width: 992px) {
+            header,
+            main,
+            footer,
+            .chatWindowFrame {
+                padding-left: 0;
+            }
+
+            .modal{
+            left: 0px !important;
+        }
+        }
+        
+        .chatWindowFrame::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .side-nav::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* text-shadow: -1px 0 orange, 0 1px orange, 1px 0 orange, 0 -1px orange; */
+    </style>
+
+</head>
+
+<body style="background-image: url('bk.png');background-size: 300%;backdrop-filter: brightness(100%) blur(20px);height: 100%;width: 100%;overflow: hidden;">
+
+    <div id="screen" class="container center" style="width:100%;height:auto;margin:auto;">
+        <h1 id="welcome" class="bounceInUp animated center" style="color:white;;font-weight: 100;">Welcome!</h1>
+        <h2 id="text1" class="bounceInUp animated center" style="color:white;;font-weight: 100;display:none;">This is an app that we chat with picture.</h2>
+        <h2 id="text2" class="fadeIn animated center" style="color:white;;font-weight: 100;display:none;">We will teach you how to draw simple things.</h2>
+        <h2 id="text3" class="fadeIn animated center" style="color:white;;font-weight: 100;display:none;">Remeber: PICTURE ONLY.</h2>
+        <a id="nextbtn" href="#!" class=" btn fadeIn animated center z-depth-1 wave-effect hoverable" style="background-color:#ffc1e3;color:white;display:none;margin:auto;width:110px">NEXT</a>
+
+    </div>
+
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
+    <script src="res/js/jquery-2.1.1.min.js"></script>
+    <script src="res/js/materialize.min.js"></script>
+    <script src="canvas/drawingboard.js"></script>
+    <script src="res/js/main.js"></script>
+    <!-- Insert this line after script imports -->
+    <script>
+        if (window.module) module = window.module;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="res/css/materialize.min.css">
+    <link rel="stylesheet" href="res/css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="res/css/login.css">
+    <link rel="stylesheet" href="res/css/loading.css">
+    <link rel="stylesheet" href="canvas/drawingboard.css">
+    <link rel="stylesheet" href="animate.css">
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        
+        html {
+            font-family: 微软雅黑;
+        }
+        
+        main {
+            flex: 1 0 auto;
+            position: relative;
+        }
+        
+        header,
+        main,
+        footer,
+        .chatWindowFrame {
+            padding-left: 300px;
+        }
+
+        .modal{
+            position: absolute;
+            left: 150px !important;
+        }
+        
+        @media only screen and (max-width: 992px) {
+            header,
+            main,
+            footer,
+            .chatWindowFrame {
+                padding-left: 0;
+            }
+
+            .modal{
+            left: 0px !important;
+        }
+        }
+        
+        .chatWindowFrame::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .side-nav::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* text-shadow: -1px 0 orange, 0 1px orange, 1px 0 orange, 0 -1px orange; */
+    </style>
+
+</head>
+
+<body style="background-image: url('bk.jpg');background-size: 300%;backdrop-filter: brightness(100%) blur(20px);height: 100%;width: 100%;overflow: hidden;">
+
+    <div id="screen" class="container center" style="width:100%;height:auto;margin:auto;">
+        <div class="row" style="position:relative;margin: auto;">
+            <img src="avatar.jpg" alt="" style="width:50px;height:50px;border-radius:50%;display:inline-block;">
+            <div class="arrow" style="z-index:1;width: 0; height: 0; border-top: 10px solid transparent;border-bottom: 10px solid transparent; border-right:10px solid #80d6ff;display: inline-block;position: absolute;top:15px; "></div>
+            <div class="msgbox z-depth-1-half" style="z-index:-1;width:200px;height:auto;background-color: #80d6ff;display: inline-block;position: relative;left: 10px;border-radius: 5px;">
+                Do you know what this app is?
+            </div>
+        </div>
+    </div>
+
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
+    <script src="res/js/jquery-2.1.1.min.js"></script>
+    <script src="res/js/materialize.min.js"></script>
+    <script src="canvas/drawingboard.js"></script>
+    <script src="res/js/main.js"></script>
+    <!-- Insert this line after script imports -->
+    <script>
+        if (window.module) module = window.module;
+    </script>
+</body>
+
+</html>
